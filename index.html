@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <script src="https://kit.fontawesome.com/5cf8458208.js" crossorigin="anonymous"></script>
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <title>Calculation Form</title>
+    <meta charset="utf-8"/>
+  </head>
+
+  <body>
+	<div>
+      <i class="fas fa-brain"></i>
+       <form id="form1" name="form1" action="index.html" method="post" target="_self">
+		  <h2>--Math computation Form--</h2>
+
+
+		  <h5> Computing some value from taking in user inputs.</h5>
+		  <hr />
+		  <!-- Place your form with labels here-->
+      <h2> Compute Force </h2>
+		  <label for ="mass">Enter Mass</label>
+      <input type="text" mass="mass" id="mass">
+      <br>
+      <label for ="acceleration">Enter acceleration</acceleration>
+      <input type = "text" acceleration="acceleration" id="acceleration">
+      <br>
+		  <input type="button" id="submit" value="Submit" onclick="computeForce()">
+
+	    </form>
+	</div>
+	<p id="display"></p>
+  <div>
+       <form id="form2" name="form2" action="index.html" method="post" target="_self">
+		    <h2> Compute Displacement </h2>
+		  <label for ="velocity">Enter velocity</label>
+      <input type="text" velocity="velocity" id="velocity">
+      <br>
+      <label for ="time">Enter Time</label>
+      <input type = "text" time="time" id="time">
+      <br>
+      <label for="acceleration1">Enter acceleration</label>
+      <input type = "text" acceleration="acceleration1" id="acceleration1">
+      <br>
+		  <input type="button" id="submit1" value="Submit" onclick="computeAvgVelocity()">
+
+	    </form>
+	</div>
+	<p id="display1"></p>
+  <div>
+       <form id="form3" name="form3" action="index.html" method="post" target="_self">
+		    <h2> Compute Principal </h2>
+		  <label for ="a">Enter a</label>
+      <input type="text" a="a" id="a">
+      <br>
+      <label for ="b">Enter b</label>
+      <input type = "text" b ="b" id="b">
+      <br>
+      <label for="c">Enter c</label>
+      <input type = "text" c="c" id="c">
+      <br>
+		  <input type="button" id="submit2" value="Submit" onclick="computePrincipal()">
+
+	    </form>
+	</div>
+	<p id="display2"></p>
+  <p id="display2a"></p>
+  <div>
+       <form id="form3" name="form3" action="index.html" method="post" target="_self">
+		    <h2> Compute Present Value </h2>
+		  <label for ="PMT">Enter PMT</label>
+      <input type="text" PMT="PMT" id="PMT">
+      <br>
+      <label for ="r">Enter rate</label>
+      <input type = "text" r ="r" id="r">
+      <br>
+      <label for="n">Enter number of periods</label>
+      <input type = "text" n="n" id="n">
+      <br>
+		  <input type="button" id="submit3" value="Submit" onclick="computePresentValue()">
+
+	    </form>
+	</div>
+	<p id="display3"></p>
+	<script src="./js/script.js" type="text/javascript"> </script>
+  </body>
+  </html>
