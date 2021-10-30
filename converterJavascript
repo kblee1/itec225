@@ -1,0 +1,37 @@
+function b2d() {
+  var b = document.getElementById("binarynum").value;
+  let sb = b.split(" ");
+  b = sb.join("");
+  var d = parseInt(b,2);
+  var cnt = 0;
+  if(sb == "" ) {
+    document.getElementById("b2dbox").innerHTML =  "Input is empty.";
+
+  }
+  else {
+  for(let char of b) {
+    if(char == "1" || char =="0") {
+      cnt++
+    }
+  }
+  if(cnt == b.length) {
+    document.getElementById("b2dbox").innerHTML =  d;
+
+  }
+  else {
+    document.getElementById("b2dbox").innerHTML =  "You must enter a binary number.";
+
+  }
+}
+
+}
+function d2b() {
+  var inputInt = parseInt(document.getElementById("decimal").value);
+  var bin = "";
+
+  while(inputInt > 0) {
+    bin = inputInt%2 + bin;
+    inputInt = Math.floor(inputInt/2);
+  }
+  document.getElementById("d2bbox").innerHTML =  bin;
+}
