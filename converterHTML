@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+<head>
+  <title>Converter</title>
+</head>
+<body>
+  <h1>Binary to Decimal Converter</h1>
+  <strong>Enter a binary number: </strong>
+  <input type = "text" id = "binarynum">
+  <button onclick="b2d()">Submit</button>
+  <p id = "b2dbox">Enter a binary number.</p>
+  <br>
+  <br>
+  <h1>Decimal to Binary Converter</h1>
+  <strong>Enter a decimal: </strong>
+  <input type = "text" id = "decimal">
+  <button onclick="d2b()">Submit</button>
+  <p id = "d2bbox">Enter a decimal number.</p>
+
+  <script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
