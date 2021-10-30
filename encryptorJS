@@ -1,0 +1,22 @@
+function Encrypt() {
+  var ui = document.getElementById("originalString").value;
+  if(ui == "") {
+    alert("Input is empty");
+  }
+  else {
+  let message = "The cow is flying.";
+  let secret = "cow";
+  var encrypt = CryptoJS.AES.encrypt(message, secret);
+  var encrypt1 = CryptoJS.HmacSHA1(message,secret);
+  var encrypt2 = CryptoJS.HmacSHA224(message,secret);
+  var encrypt3 = CryptoJS.SHA256(message,secret);
+
+  document.getElementById("originalString").innerHTML = message;
+  document.getElementById("outputbox1").innerHTML = ui;
+  document.getElementById("aes").innerHTML = encrypt;
+  document.getElementById("sha1").innerHTML = encrypt1;
+  document.getElementById("sha224").innerHTML = encrypt2;
+  document.getElementById("sha256").innerHTML = encrypt3;
+  }
+
+}
