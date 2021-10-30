@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-
+js.js"></script>
+<html lang="en">
+<head>
+  <title>Encrypt</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-
+  js.js"></script>
+
+</head>
+<body>
+<strong>Original String: </strong>
+<input type = "text" id = "originalString">
+<button onclick="Encrypt()">Submit</button>
+<br>
+<p id = "outputbox1"></p>
+<br>
+<strong>AES Encrypted: </strong> <p id = "aes"></p>
+<strong>SHA1 Encrypted: </strong><p id = "sha1"></p>
+<strong>SHA224 Encrypted: </strong> <p id = "sha224"></p>
+<strong>SHA256 Encrypted: </strong><p id = "sha256"></p>
+<script type="text/javascript" src="javascript.js"></script>
+</body>
+</html>
